@@ -59,6 +59,9 @@ travel-planner/
 │   └── mvnw.cmd
 │
 ├── frontend/
+│	├── index.HTML
+│   ├── style.css 
+│   └── app.js
 │
 ├── .gitignore
 ├── .gitattributes
