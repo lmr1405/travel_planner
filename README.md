@@ -12,40 +12,40 @@ El MVP se centra en la organización básica de viajes.
 
 La primera versión permitirá:
 
-- Crear viajes con destino, fechas y descripción.
-- Consultar el listado de viajes guardados.
-- Ver el detalle de un viaje concreto.
-- Editar la información básica de un viaje.
-- Eliminar viajes.
-- Añadir tareas previas asociadas a un viaje.
-- Marcar tareas como completadas.
-- Crear listas de preparación para cada viaje.
-- Marcar elementos de la lista como preparados.
+* Crear viajes con destino, fechas y descripción.
+* Consultar el listado de viajes guardados.
+* Ver el detalle de un viaje concreto.
+* Editar la información básica de un viaje.
+* Eliminar viajes.
+* Añadir tareas previas asociadas a un viaje.
+* Marcar tareas como completadas.
+* Crear listas de preparación para cada viaje.
+* Marcar elementos de la lista como preparados.
 
 ## Tecnologías
 
 ### Backend
 
-- Java 17
-- Spring Boot
-- Maven
-- Spring Web
-- Spring Data JPA
-- PostgreSQL
-- Bean Validation
+* Java 17
+* Spring Boot
+* Maven
+* Spring Web
+* Spring Data JPA
+* PostgreSQL
+* Bean Validation
 
 ### Frontend
 
-- HTML
-- CSS
-- JavaScript
-- JSON
+* HTML
+* CSS
+* JavaScript
+* JSON
 
 ### Herramientas
 
-- Eclipse
-- PostgreSQL / pgAdmin
-- Git
+* Eclipse
+* PostgreSQL / pgAdmin
+* Git
 
 ## Estructura del proyecto
 
@@ -63,3 +63,41 @@ travel-planner/
 ├── .gitignore
 ├── .gitattributes
 └── README.md
+```
+
+## Desarrollo local
+
+Para ejecutar el proyecto en local es necesario tener instalado:
+
+* Java 17
+* Maven
+* PostgreSQL
+
+La aplicación utiliza PostgreSQL como base de datos. Durante el desarrollo local se utiliza una base de datos llamada:
+
+```text
+travel_planner_db
+```
+
+## Ejecutar el backend
+
+Desde la raíz del proyecto:
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+Por defecto, el backend se ejecuta en:
+
+```text
+http://localhost:8080
+```
+
+## Comprobación del backend
+
+La API incluye un endpoint básico para comprobar que el backend responde correctamente:
+
+```http
+GET /api/health
+```
